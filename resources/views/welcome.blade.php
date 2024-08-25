@@ -11,6 +11,7 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
         <!-- Styles -->
+        @livewireStyles
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="antialiased font-sans">
@@ -37,17 +38,9 @@
                             </a>
                         </div>
                     
-                        <!-- Image Section -->
+                        <!-- Image Section (Now the Carousel) -->
                         <div class="relative">
-                            <div class="relative rounded-lg overflow-hidden shadow-lg">
-                                <img src="img/test.png" alt="Klenteng Magelang" class="w-full h-auto object-cover">
-                                <div class="absolute inset-0 bg-black/30 flex flex-col justify-between p-4">
-                                    <div>
-                                        <h3 class="text-lg font-semibold text-white">Klenteng Magelang</h3>
-                                        <p class="text-sm text-gray-200">Mezaa</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <livewire:carousel />
                         </div>
                     </main>
 
@@ -57,5 +50,6 @@
                 </div>
             </div>
         </div>
+        @livewireScripts
     </body>
 </html>
