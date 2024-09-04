@@ -9,5 +9,7 @@
     @livewire('profile-component')
 
     <!-- Modal Component -->
-    @livewire('modal-component')
+    @livewire('view-modal-component')
+
+
 </x-app-layout>

@@ -8,7 +8,7 @@ use Livewire\Component;
 class Carousel extends Component
 {
     public $currentSlide = 0;
-    public $totalSlides = 3; // Adjust this based on the number of slides
+    public $totalSlides = 2; // Adjust this based on the number of slides
 
     public function prevSlide()
     {
